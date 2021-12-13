@@ -1,0 +1,236 @@
+HAPTER 1. NUMBERS SYSTEMS ll.
+\section{1.2.1 Factors, multiples and primes}
+Deﬁnition 1.5 Suppose that m and n are positive integers. Ifn divides into m exactly, so that
+the quotient m/n is also on integer, then we say that ri divides m. We also soy that n is a factor
+(or a divisor) of m, and that m is a multiple ofn.
+Thus, for example, we can say that “4 divides 20", “4 is a factor of 20”, "20 is a multiple of 4”.
+These three sentences all have the sarne meaning. '
+Deﬁnition 1.6 A prime number (or more simply, a prime) is an integer greater than 1 whose
+only positive factors are itself and 1.
+Notice carefully that the number 1 is not a prime. It is called a unit and has the property that
+it divides every integer. A number greater than 1 that is not prime is called composite. The
+smallest primes are thus 2,3,5,7,11,13,l7,..., whereas the numbers 4,6,8,9, 10, 12, 14, 15, 16, 
+are composite. ‘
+Example 1.22 The composite number 30 can be written as a product of two positive integers
+greater than 1 in several different ways. For example, we could write
+30=2><15,3O=3><10,or30=5><6.
+Suppose we now repeat the process and express the composite integers in these products as products
+of factors, until every factor in each product is a prime. We would then obtain
+2><15 : 2><3><5
+3x10 : 3><5><2
+5><6 : 5><2><3.
+Note that each way of splitting up 30 gives the some set of prime factors; the ﬁnal expressions
+differ only in the order which the primes are listed. I3
+Example 1.22 illustrates the following general result. You should be familiar with its statement,
+but the proof is beyond the scope of this course.
+\section{Theorem 1.7 The Fundamental Theorem of Arithmetic} Every positive integer greater than
+1 can be written as the product ofl and prime factors. Further, this expression is unique, except
+for the order in which the prime factors occur.
+The only reason for the appearance of 1 in this theorem is to accomodate the case when the integer
+is itself a prime number, such as 29 for example. It does not make sense to say that 29 is a product
+of 29, but we can say that 29 is a product 1 and 29. When asked to express a composite integer
+as a product of prime factors, we omit the unit l. This theorem guarantees that however we go
+about splitting up an integer into prime factors, we will always obtain the same prime factors.
+Example 1.23 We write 280 as the product ofits prime factors. From Theorem 1.7, we can start
+by writing 280 as the product of any two of its factors. An obvious factor of 280 is 10, and so we
+can proceed as follows:
+280 = 10 >< 28
+= (2 >< 5) >< (4 >< 7)
+= ‘2><5><(2><2)><'i.
+To simplify the expression, we gather together all occurences of the same prime and write the
+product as
+280 = 23 >< 5 X 7,
+using index notation to deal with repeated factors, and listing the distinct primes in ascending
+order of size. I3 >
+Since every positive integer corresponds in a unique way to its prime factors, the primes can be
+regarded as the basic building blocks of the integers. The study of primes and the properties of
+
+
+
+CHAPTER 1. NUMBERS SYSTEMS 12
+the integers has a long history, going back at least 2500 years to the early Greek mathematicians
+of the School of Pythagoras. An important modern application of prime numbers is to Public Key
+Cryptography. The details of this application are outside the scope of this course‘.
+\section{Representing fractions}
+Deﬁnition 1.8 Numbers that can be ezpressed as a fraction (or ratio) m/n of two integers m and
+1i, where n 9’: O, are called rational numbers.
+We have two ways of representing a rational number, whatever the number base. One is to write it
+in the form of a fraction m/n, where both m and n are integers (expressed in the relevant number
+base] and n # O. Note that all integers are special cases of rational numbers, since we can write
+an integer m as the fraction m/1.
+The other method of representing a rational number is to write it in the form of a decimal, using
+negative as well as positive and zero powers of the base as place values. We shall see in this section
+that the decimal form of a rational number has a very special property.
+\section{ Decimal fractions}
+Let us look first at the representation of rational numbers in base 10 in expanded notation. The
+place values are illustrated by the following boxes.
+~-I103Ii0‘l|101|10°|10"‘I10-2|10—3I---
+I I I I I I I I
+You will be familiar with the process of turning a fraction m/1| into a decimal by dividing n into
+m. Since we are interested in what happens to the part of the expansion after the decimal point,
+we shall assume that m and n are positive integers with m less than n.
+The decimal expansion of a. fraction has an interesting feature: it either terminates after a ﬁnite
+number of places, as for example in the expansion 17/20 = 0.85 or 3/8 = 0.375; or it has a recurring
+block of ﬁgures, as for example the digit 6 in the expansion 5/12 = 0.41666... or the block 63 in
+7/ll = 0.636-363.... Weinvestigate why this occurs.
+lt can be shown that when we divide by a positive integer n, we can always choose the quotient
+so that the remainder is either O or one of the positive integers less than n. There are thus only
+n possible remainders when we divide by n. Now when we divide m.0O0 - - » by n, the remainder
+at each division, becomes the “carrying number" for the next division. Since we can continue the
+divisions indeﬁnitely and there are only n possible carrying numbers, we either obtain (eventually)
+a remainder 0, in which case the decimal expansion terminates, or we eventually obtain o remainder
+that has occurred before. From then on, the same sequence of quotients and remainders will occur
+again and again.
+Example 1.24 Consider the decimal expansion of 4/T. On dividing by 7, the remainder is always
+one of the six possibilities: 0,1, 2, 3,4, 5 or 6.
+0.57142s51--
+1|4.‘*o@o*0*0*0°0*o*0
+As you see, in this case, all six possible remainders arise: the ﬁrst is 4, then we have successively
+remainders of 5, 1, 3, ‘2, 6; then the remainder 4 occurs again. From this point on, the same sequence
+of six remainders and quotients repeats itself. Thus the decimal expansion of 4/7 has a repeated
+block of six digits. EI
+We now consider the converse problem. Suppose we are given a terminating or repeating decimal.
+ls it possible to Write it as a fraction m/n, where m and n are integers? Clearly this is possible in
+the case of a terminating decimal, since we can write it with a denominator that is a power of 10.
+By a neat trick, we can show that any recurring decimal can also be expressed as a fraction m/n
+and ﬁnd the values of 1n and n. We explain the method in the context of the following examples.
+llf you are interested in reading about this application, there is a clear and interesting explanation in Discrete
+ll-lathe-maiics with Applications, by MD. Albertsorr and .l.P. I-Iutchings (see Appendix A).
+
+%==============================================%
+
+The binary number (101.11); represents
+1(22) + 0(21)+1(1)+1(2“)+1(2-2): 2’ + 2“ + 2-1+ 2"? = 5.15.
+Alternatively, we could work as follows,
+(101.11); : (101); +(l1/100); = 5 + 3/4 = 5175. El
+The digits to the left of the point are called the integral part of the number and the digits to the
+right or" the point are called the fractional part of the number. Thus, for example, the integral
+part of (101.11); is (101); and the fractional part is (0.11);
+Hexadecimal system
+The place values in the full hexadecimal system are illustrated below.
+ | 163 I 162 I 161 | le°=1 I 16* | 16'? | 16-3 | 
+I I I I I I I I
+Example 1.28 The number (E713B)1a represents the decimal number
+14(161) + 1(1) + 3(1s-1)+11(1s-2) = 231+ 3/16 + 11/256 = 231.2a0=16s15. o
+To convert the fractional part ofa binary number into the hexadecimal system, we split the binary
+string into groups of four bits starting from the decimal point and working to the right. If the last
+block to the right contains less than four bits, we add zeros as necessary on the end of the number
+to complete the block. We then use the binary-hex conversion table given in section 1.1.41
+Exaniple 1.29 Converting the binary number (101011101.11)g to hex, we have
+10101110111: 0001 0101 1101 .1100 = (15D.C)15.
+Converting the hex number (B35116 to binary, we have
+B3.5 =101100110101:(10110011.0101)g.El
+1 .3 Real numbers
+Learning Objectives
+After studying this section, you should be able to:
+e give examples of the kinds of measurements for which the real number system is used;
+o give examples of irrational numbers;
+0 use and interpret greater than and less than signs;
+0 express a rational number in ﬂoating point form and scientiﬁc notation.
+Introduction
+It is not easy to deﬁne exactly what we mean by a real number. We can visualize them geometically
+as a set of numbers that can be put into one-to~one correspondence with the points of a line, inﬁnite
+in e.\'teuL This is the procedure we adopt when we mark a scale on a coordinate axis in order to
+graph a function. The real numbers have the important property that they form what is called a
+rxozrfinuumi The set of real numbers is therefore used when we want to measure a quantity such as
+tirne. length or speed that can vary continuously‘
+
+
+\section{Irrational numbers}
+The question arises as to whether all real numbers are rational, or whether there exist numbers that
+cannot be expressed as a fraction of two integers. The ancient Greek mathematicians answered
+this question in the 4th Century BC by showing that the square root of any integer that is not
+an exact square cannot be expressed as a fraction. This shows the existence of real numbers that
+are not rational. We call such numbers irrational. As well as numbers like \/5, V5, etc, numbers
+such as 11' and e (base of the natural logarithm) are irrational numbers. It follows from Result 1.9-,
+that every irrational number has a decimal expansion that neither repeats nor terminates. Thus
+W€ can only ever give an approximation to the value of an irrational number in the decimal number
+system, or indeed in any number system with an integer base.
+\section{ Inequality symbols}
+Suppose 2 and y are two different real numbers. The fact that tr is not equal to y is expressed
+symbollically as
+2: ¢ y.
+Note that the word distinct is often used in mathematics, rather than “different”, to describe two
+or more objects of the same class that can be distinguished from one another. So, in this case, we
+could have described :2 and y as “distinct numbers".
+If at ¢ y, then one of 1: and y must be the greater of the two, say 2 is greater than y. We write
+this as
+1! > 1/.
+An equivalent statement is “y is less than :r:”, written
+y < 1:.
+To avoid confusing these symbols, note that the pointed end (or small end) of either inequality
+sign always points towards the smaller number, while the open (or larger) end points to the larger
+number.
+Example 1.30 The decimal expansion of 1r begins 3.1415 . . .. Thus we can say that 1r > 3.14 and
+also that 'rr < 3.15. Together, these two inequalities tell us that the true value of 1r is between 3.14
+and 3.15. We can express this by concatenating the two inequalities as follows:
+3.14 < 1r < 3.15.
+Notice that we have turned the inequality 1r > 3.14 round and expressed it as 3.14 < 1.", before
+combining it with the other inequality, so that 1r is sandwiched between the smallest and the largest
+of the three numbers and both inequality signs point in the same direction. D
+Example 1.31 The decimal expansion of 17/9 is 1.888.... Thus 17/9 lies between 1.888 and
+1.389. We can express this symbolically by writing
+1.888 <17/9 < 1.889.121
+The symbol “>” can be modiﬁed to express at least or, equivalently, greater than or equal ta. For
+example,
+:0 Z 5.3
+is read “r is at least 5.3”, or “rs is greater than or equal to 5.3”. Similarly, the symbol §’ reads
+“at most” or “less than or equal to”. “'
+Example 1.32 Suppose a real number 2 satisﬁes the inequalities 14 § .1: § 25. The inequality
+14 5 at tells us that 2 is at least 14. The inequality .1: § 25 means that 1' is at most 25. Thus
+together they read: “.r is at least 14 and at most 25”. ,
+The inequality sign “g” can also be concatenated with “<“, in either order. So, for example,
+14 § :r < 25 means that ar is at least 14 and less than 25. D
+
+
+
+CHAPTER l. NUMBERS SYSTEMS‘ 16
+\section{Floating-point notation}
+A digital device, such as a hand-held calculator or digital computer, is only able to store a ﬁnite
+(and often ﬁxed) number of digits to represent any numeral. On the other hand, all irrational
+numbers and rational numbers with repeating blocks in their decimal expansion require an inﬁnite
+number of digits to represent them exactly in decimal form. Even a terminating decimal may have
+more digits in its decimal expansion than the device is able to store. Thus most real numbers will
+be represented in a digital computer only by an approximation, formed by cutting off the decimal
+expansion after a certain number of digits. This produces an error in calculations known as a
+truncation error.
+Suppose that a calculator can store only 10 digits. Then, for example, the error in representing
+5/12 as 0416666666 is 0000000000666“. ., or a little less than 0000000000667. This may not seem
+very grave, but in a complex calculation errors may accumulate, giving a substantial error in the
+solution.
+It is hard to read and comprehend a number such as 0000000000667 written in this form. There are
+more convenient ways of expressing very small or very large decimal numbers. The two main ones
+are called scientiﬁc notation and ﬂoating-point notation. Most computers can store real numbers
+in ﬂoating-point notation, so we shall describe this method in detail. In this system, a positive
+number is expressed as the product of a power of 10 called the exponent, and a number 1: such
+that 011 § :2 < 1 called the mantissa. A
+Example 1.33 In ﬂoating point notation, the number 0000000000667 is expressed as 0.667>< 10‘9,
+where -9 is the exponent and 0,667 is the mantissa; the number 146.75 is expressed as 0.14675 X 103,
+where 3 is the exponent and 0.14675 is the mantissa. El
+Scientiﬁc notation is based on a similar principle, and differs only in that the mantissa is a
+number 2 such that 1 § 1 < 10.
+Example 1.34 In scientiﬁc notation, the number 0000000000667 is expressed as 6.67 >< 104°,
+where -10 is the exponent and 6.67 is the mantissa; the number 146.75 is expressed as 1.4675 >< 102,
+where 2 is the exponent and 1.4675 is the mantissa. El
+
+\newpage
+1.4 Exercises 1
+1. (a) Write the decimal numbers 4037 and 40371 in expanded form as multiples of powers of
+10.
+(b) Suppose that a is the 4-digit decimal number a3a;ala0. Write a in expanded form as
+multiples of powers of 10. Suppose that 1: is the 5-digit decimal number G3ﬂ2L11£lg1- Can
+you express :1: in terms of o?
+2. (a) A number is expressed in base 5 as (234)5. What is it as a decimal number‘?
+(b) Suppose you multiply (234)5 by 5. What would the answer be in base 5?
+3. Express the following binary numbers as decimal numbers:
+(11011)2; (11o0110),; (111111111),
+Can you think of a quick way of doing the last one?
+4. Perform the binary additions
+(10111); +(1l1010)2é (1101); + (1011); —I- (1111);.
+5‘ Perform the binary subtractions
+(1001); - (111)g§ (110000); — (10111);
+6. Perform the following binary multiplications 4
+(1101); X (10l)g; (1101); >< (1101);.
+
+
+

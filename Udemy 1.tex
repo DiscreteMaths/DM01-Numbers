@@ -1,0 +1,403 @@
+
+\subsection*{Hexadecimal}
+\begin{itemize}
+\item Hexadecimal basic concepts:	
+\item Hexadecimal is base 16.  
+\item There are 16 digits in counting (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)
+\item When you reach 16, you carry a “1” over to the next column
+\item The number after F (decimal 15) is 10 in hex (or 16 in decimal)
+\end{itemize}
+%---------------------------------------------------------
+
+\begin{tabular}{|c||c|c|c|c|c|c|}
+\hline Hex & A & B  & C & D & E & F \\  \hline
+\hline Dec & 10 & 11 & 12 & 13  &14  &15  \\  \hline
+\hline 
+\end{tabular} 
+
+\textbf{Conversion to Decimal}
+\[\textbf{5} \times 16^2 + \textbf{A} \times 16^1  + \textbf{9} \times 16^0\]
+\[=5 \times 16^2 + 10 \times 16^1  + 9 \times 16^0\]
+\[= 1280 + 160 + 9\]
+
+
+% Use the following steps to perform hexadecimal addition:
+
+\subsection*{Hexadecimal Addition}
+\begin{itemize}
+\item		Add one column at a time.
+
+\item		Convert to decimal and add the numbers.
+
+\item	If the result of step two is 16 or larger subtract the result from 16 and carry 1 to the next column.
+
+\item	If the result of step two is less than 16, convert the number to hexadecimal.
+
+\end{itemize}
+
+\[\begin{array}{cccc}
+	&		&		&		\\	
+	&	5	&	A	&	9	\\	
+	-&	6	&	9	&	4	\\	\hline
+	&		&		&		\\	
+\end{array}\]
+
+\subsection*{Hexadecimal Addition}
+\begin{itemize}
+\item		Add one column at a time.
+
+\item		Convert to decimal and add the numbers.
+
+\item	If the result of step two is 16 or larger subtract the result from 16 and carry 1 to the next column.
+
+\item	If the result of step two is less than 16, convert the number to hexadecimal.
+
+\end{itemize}
+\[\begin{array}{cccc}
+	&		&		&		\\	
+	&	5	&	A	&	9	\\	
+	+&	6	&	9	&	4	\\	\hline
+	&		&		&		\\	
+\end{array} \]
+
+\noindent 1. Add one column at a time\\
+2. Convert to decimal and add (9 + 4 = 13)\\
+3. Decimal 13 is hexadecimal D\\
+4. Next column :Convert to decimal and add (10 + 9 = 19)\\
+5. (19 larger than 16) 14 in Hexadecimal \\
+6. Leave 4 carry to one\\
+7.  Next Colulm add 1 + 5 + 6 = 12)\\
+8. Decimal 12 is hexadecimal C\\
+
+\[\begin{array}{cccc}
+	&		&		&		\\	
+	&	5	&	A	&	9	\\	
+	+&	6	&	9	&	4	\\	\hline
+	&	C	&	4	&	D	\\	
+\end{array} \]
+
+\subsection*{Hexadecimal Subtraction}
+\[\begin{array}{cccc}
+	&		&		&		\\	
+	&	B	&	B	&	B	\\	
+	-&	A	&	5	&	D	\\	\hline
+	&		&		&		\\	
+\end{array} \]
+
+
+\[\begin{array}{cccc}
+	&		&		&		\\	
+	&	B	&	\textbf{\emph{A}}	&	\textbf{\emph{1B}}	\\	
+	&	A	&	5	&	D	\\	\hline
+	&		&		&		\\	
+\end{array} \]
+
+
+\begin{itemize}
+\item Binary to Decimal conversion
+\item Decimal to Binary conversion
+\item Decimal to Hexadecimal conversion
+\item Hexadecimal to Decimal conversion
+\item Subtraction and Addition
+\item Subtraction and Addition
+\end{itemize}
+
+
+2008 Zone A Question 1 A
+Find the Hexadecimal equivalent pf the binary number 1101101.01
+
+Re-express the number in terms of 4 digit blocks, starting from the decimal point:
+
+$\emph{0}1101101.01\emph{00}$
+
+
+\begin{itemize}
+\item The first 4 digits 0110 correspond to the Hex integer 6
+\item The second 4 digits 1101 correspond to the Hex integer D
+\item The last four digits (i.e after the decimal place) 0100 correspond to the Hex integer 4
+\item So the Hexadecimal equivalent is $6D.4$
+\end{itemize}
+
+
+
+Find the binary equivalent of  $A9.8$
+
+\begin{itemize}
+\item A: 1010
+\item 9: 1001
+\item B: 1011
+\end{itemize}
+
+10101001.1011
+%---------------------------------------%
+Question 2B 2009 Zone A
+
+Convert the decimal number 299 to a hexadecimal number.
+\begin{array}{|c|c|c|c|c|}
+	&	Division	& Quotient & Remainder (Dec)	&Remainder (Hex)	\\
+299	&	18.6875	&	18	&	11	&	B	\\
+18	&	1.125	&	1	&	2	&	2	\\
+1	&	0.0625	&	0	&	1	&	1	\\
+\end{array}
+
+The answer: $(299)_{10} = (12B)_{16}$
+
+
+
+
+Floating Point Notation
+Membership Tables
+
+
+
+\begin{tabular}{|c|c|c|c|}
+	&		&	Quotient	&	Remainder	\\
+507	&\emph{	253.5	}&	253	&	1	\\
+253	&\emph{	126.5	}&	126	&	1	\\
+126	&\emph{	63	}&	63	&	0	\\
+63	&\emph{	31.5	}&	31	&	1	\\
+31	&\emph{	15.5	}&	15	&	1	\\
+15	&\emph{	7.5	}&	7	&	1	\\
+7	&\emph{	3.5	}&	3	&	1	\\
+3	&\emph{	1.5	}&	1	&	1	\\
+1	&\emph{	0.5	}&	0	&	1	\\
+\end{tabular} 
+
+Correct Answer : 111111011
+
+%------------------------------------------------------------------------------------%
+
+\begin{tabular}{|c||c|c|c|c|c|c|}
+\hline Hex & A & B  & C & D & E & F \\  \hline
+\hline Dec & 10 & 11 & 12 & 13  &14  &15  \\  \hline
+\hline 
+\end{tabular} 
+
+ABA+EFA
+
+Hexadecimal basic concepts:	
+Hexadecimal is base 16.  
+There are 16 digits in counting (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)
+When you reach 16, you carry a “1” over to the next column
+The number after F (decimal 15) is 10 in hex (or 16 in decimal)
+
+Use the following steps to perform hexadecimal addition:
+
+
+\textbf{5} \times 16^2 + \textbf{A} \times 16^1  + \textbf{9} \times 16^0
+=5 \times 16^2 + 10 \times 16^1  + 9 \times 16^0
+= 1280 + 160 + 9
+
+\subsection*{Hexadecimal Addition}
+\begin{itemize}
+\item		Add one column at a time.
+
+\item		Convert to decimal and add the numbers.
+
+\item	If the result of step two is 16 or larger subtract the result from 16 and carry 1 to the next column.
+
+\item	If the result of step two is less than 16, convert the number to hexadecimal.
+
+\end{itemize}
+\[\begin{array}{cc:c:c}
+	&		&		&		\\	
+	&	5	&	A	&	9	\\	
+	-&	6	&	9	&	4	\\	\hline
+	&		&		&		\\	
+\end{array} \]
+
+1. Add one column at a time
+2. Convert to decimal and add (9 + 4 = 13)
+3. Decimal 13 is hexadecimal D
+4. Add next column
+2.	Convert to decimal and add (10 + 9 = 19)
+3.	Follow 16 or larger than 16 rule 
+
+2.	Convert to decimal and add (1 + 5 + 6 = 12)
+3.	Follow less than 16 rule, convert to hex
+	Decimal 12 is hexadecimal C
+
+
+
+
+\subsection*{Hexadecimal Subtraction}
+\[\begin{array}{cccc}
+	&		&		&		\\	
+	&	B	&	B	&	B	\\	
+	-&	A	&	5	&	D	\\	\hline
+	&		&		&		\\	
+\end{array} \]
+
+
+\[\]\begin{array}{cccc}
+	&		&		&		\\	
+	&	B	&	\textbf{\emph{A}}	&	\textbf{\emph{1B}}	\\	
+	&	A	&	5	&	D	\\	\hline
+	&		&		&		\\	
+\end{array} \]
+
+\begin{itemize}
+\item Binary to Decimal conversion
+\item Decimal to Binary conversion
+\item Decimal to Hexadecimal conversion
+\item Hexadecimal to Decimal conversion
+\item Subtraction and Addition
+\item Subtraction and Addition
+\end{itemize}
+
+Floating Point Notation
+Membership Tables
+
+
+
+\begin{tabular}{|c|c|c|c|}
+	&		&	Quotient	&	Remainder	\\
+507	&\emph{	253.5	}&	253	&	1	\\
+253	&\emph{	126.5	}&	126	&	1	\\
+126	&\emph{	63	}&	63	&	0	\\
+63	&\emph{	31.5	}&	31	&	1	\\
+31	&\emph{	15.5	}&	15	&	1	\\
+15	&\emph{	7.5	}&	7	&	1	\\
+7	&\emph{	3.5	}&	3	&	1	\\
+3	&\emph{	1.5	}&	1	&	1	\\
+1	&\emph{	0.5	}&	0	&	1	\\
+\end{tabular}
+
+Correct Answer : 111111011
+
+%------------------------------------------------------------------------------------%
+
+\begin{tabular}{|c||c|c|c|c|c|c|}
+\hline Hex & A & B  & C & D & E & F \\  \hline
+\hline Dec & 10 & 11 & 12 & 13  &14  &15  \\  \hline
+\hline
+\end{tabular}
+
+ABA+EFA
+
+Hexadecimal basic concepts:	
+Hexadecimal is base 16.
+There are 16 digits in counting (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)
+When you reach 16, you carry a “1” over to the next column
+The number after F (decimal 15) is 10 in hex (or 16 in decimal)
+
+Use the following steps to perform hexadecimal addition:
+
+
+\textbf{5} \times 16^2 + \textbf{A} \times 16^1  + \textbf{9} \times 16^0
+=5 \times 16^2 + 10 \times 16^1  + 9 \times 16^0
+= 1280 + 160 + 9
+
+\subsection*{Hexadecimal Addition}
+\begin{itemize}
+\item		Add one column at a time.
+
+\item		Convert to decimal and add the numbers.
+
+\item	If the result of step two is 16 or larger subtract the result from 16 and carry 1 to the next column.
+
+\item	If the result of step two is less than 16, convert the number to hexadecimal.
+
+\end{itemize}
+\[\begin{array}{cc:c:c}
+	&		&		&		\\	
+	&	5	&	A	&	9	\\	
+	-&	6	&	9	&	4	\\	\hline
+	&		&		&		\\	
+\end{array} \]
+
+1. Add one column at a time
+2. Convert to decimal and add (9 + 4 = 13)
+3. Decimal 13 is hexadecimal D
+4. Add next column
+2.	Convert to decimal and add (10 + 9 = 19)
+3.	Follow 16 or larger than 16 rule
+
+2.	Convert to decimal and add (1 + 5 + 6 = 12)
+3.	Follow less than 16 rule, convert to hex
+	Decimal 12 is hexadecimal C
+
+
+
+
+\subsection*{Hexadecimal Subtraction}
+\[\begin{array}{cccc}
+	&		&		&		\\	
+	&	B	&	B	&	B	\\	
+	-&	A	&	5	&	D	\\	\hline
+	&		&		&		\\	
+\end{array} \]
+
+
+\[\]\begin{array}{cccc}
+	&		&		&		\\	
+	&	B	&	\textbf{\emph{A}}	&	\textbf{\emph{1B}}	\\	
+	&	A	&	5	&	D	\\	\hline
+	&		&		&		\\	
+\end{array} \]
+----------------------------------------------------------%
+\section*{Section B: Hexadecimal Numbers}
+\begin{itemize}
+\item[B.1]
+\item[B.2]
+\item[B.3]
+\item[B.4]
+\item[B.5]
+\item[B.6]
+\item[B.7]
+\item[B.8]
+\end{itemize}
+\newpage
+
+
+\subsection*{Associative Laws}
+\[ (A \cup B) \cup C =  A \cup (B \cup C)  \]
+\[ (A \cap B) \cap C =  A \cap (B \cap C)  \]
+
+\subsection*{Distributive Laws}
+\[ (A \cup B) \cap C =  (A \cup B) \cap (A \cup C)  \]
+\[ (A \cap B) \cup C =  (A \cap B) \cup (A \cap C)  \]
+
+
+\[ (A \cup B) \cap B^{\prime} \]
+%----------------------------------------------------------%
+\section*{Section C: Real and Rational Numbers}
+\begin{itemize}
+\item[C.1]
+\item[C.2]
+\item[C.3]
+\item[C.4]
+\item[C.5]
+\item[C.6]
+\item[C.7]
+\item[C.8]
+\end{itemize}
+\newpage
+%----------------------------------------------------------%
+\newpage
+\section*{Formulae}
+\begin{itemize}
+
+
+
+
+\item Bayes' Theorem:
+\begin{equation*}
+P(B|A)=\frac{P\left(A|B\right) \times P(B) }{P\left( A\right) }.
+\end{equation*}
+
+
+
+\item Binomial probability distribution:
+\begin{equation*}
+P(X = k) = ^{n}C_{k} \times p^{k} \times \left( 1-p\right) ^{n-k}\qquad \left( \text{where}\qquad
+^{n}C_{k} =\frac{n!}{k!\left(n-k\right) !}. \right)
+\end{equation*}
+
+\item Poisson probability distribution:
+\begin{equation*}
+P(X = k) =\frac{m^{k}\mathrm{e}^{-m}}{k!}.
+\end{equation*}
+\end{itemize}
+
+\end{document} 

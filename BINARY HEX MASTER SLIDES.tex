@@ -1,0 +1,162 @@
+
+CHAPTER. 1. NUMBERS SYSTEMS 5
+Adding the 22 column, we obtain (1)2 and so this time there is nothing to carry. Adding the
+23 column, we obtain (11)-3 and so we record 1 and carry 1 into the 24 column. Adding the
+2" column, we obtain (1)9 and the process terminates,
+Thus we obtain (1011)-3-:-(1111);-1-(11); = (11101); In decimal numbers, this addition is 11+15+3,
+and the sum we obtained is 29. El
+Binary subtraction
+Let us first revise how We deal with “borrowing” in base 10.
+Example 1.6 \¢Ve perform the subtraction 4003 —~ 597.
+oa 4:-0:
+rzscnocz
+ooozo
+c>=1c»:€_I,
+Since 7 is greater than 3, we must borrow a 10. In this case, we do this from the 103 column. We
+rewrite the borrowed 1000 as 990 + 10. So we reduce the entry in the 103 column from 4 to 3,
+replace the zeros by 9’s in the next two columns and replace 3 by 10‘+3 in the units column. The
+resulting row is recorded above the horizontal line. We can now obtain the answer by subtracting
+597 from the row above the horizontal line. U
+We shall now carry out the same process in binary, where we have to borrow a. 2 when we have to
+perform the subtraction (0)2 ~ (1)2 in any column. The (0)3 then becomes (10);, and we have
+(10)2 ~ (1)2 = (1)2-
+This process is illustrated in the example below.
+Exaniple 1.7 ll/e subtract (110l000)9 — (l01011)2.
+Step 1
+1 1 0 0 1 l 10
+1 1 0 1 0 O O
+1 0 1 0 1 1
+As in the previous example, we have to borrow to perform the subtraction in the units
+column. The ﬁrst column with a non-zero entry is the 23 column. We borrow (1000); from
+this column and rewrite it as (110); + (10); (effectively, we are borrowing an S and rewriting
+it as 6 + 2). The revised row is recorded above the horizontal line.
+Step 2 We replace the row representing the number we are subtracting from by the row above
+the horizontal line at the end of Step 1. We can now perform the subtraction in the ﬁrst
+three columns as shown below. When we reach the 23 column; we have to borrow again. We
+repeat the procedure described in Step 1. The revised top row is shown above the horizontal
+line.
+1 0 1 10
+1 1 0 0 1 1 10
+101011
+101
+Step 3 We replace the row representing the number we are subtracting from by the row above
+the horizontal line and perform the subtraction in the 23 and 24 columns. When we reach
+the 25 column, we have to borrow from the next column. The revised top row is shown above
+the horizontal line‘
+0 10
+1 0 1 10 1 1 ,10
+1 0 1 0 1 1
+11101
+
+
+
+
+CHAPTER 1. NUMBERS SYSTEMS 6
+Step 4 \Ve replace the row representing the number we are subtracting from by the row above
+the horizontal line and complete the subtraction.
+l0l101ll0
+101011
+111101
+Thus we have obtained (1101000)? - (10lO1l)2 2 (111101)-5. In decimal numbers, this subtraction
+is 104 -- 43 and the answer we obtained is 61. El
+Binary multiplication
+The process of binary multiplication is very similar to long multiplication in the decimal system.
+A familiar feature in decimal is that \vhen we multiply any whole number by 10, we move all the
+digits one place to the left and enter a zero in the units column. Let us pause a moment to see
+why this rule works.
+Example 1.8 Consider 743 >< 10. Writing 743 in expanded notation, we have
+743 = 7(102)+ 4(101) + 3(1), '
+Multiplying each term in this equation by 10, we obtain
+143 X 10 = mo X 101) +4(1o ><1o1)+ s(1o X 1)
+= 1(1o3)+4(1o2)+s(10)
+= r(1o3)+ 4(102) + s(1o‘)+ 0(1).
+Thus the place value of each digit has been multiplied by 10 and the the entry in the units column
+is now O. E1
+A very similar thing happens when we multiply a binary number by the base number 2 = (10);.
+As we have seen in Example 1.4, the binary number (CZ4Cl3£1gL7.1l1())2 can be written in expanded
+notation as
+a4(24) + a3(23) + ﬂg(22) + al(21) + 110(1).
+Multiplying this number by 2, we obtain
+a4(2 >< 24) + a3(2 >< 2*’) + z1;(2 >< 22) + al(2 >< 21) + aD(2 ><1)
+= a4(25) + a3(24) + £Zg(23) + al(22) + aq(2)
+= (“(25) + ago“) + a2(23) + @102) + (“(21) + 0(1).
+Thus the place value of each bit has been multiplied by 2 and so the bits all move one place to the
+left and the entry in the units column is 0. Thus we have the following rule:
+Rule 1.3 To multiply by (10); in binary, we move each bit one place to the left and enter (I in the
+2° column.
+Example 1.9 Multiplying (1101); >< (10);, the rule gives (11010); Checking in decimal, we have
+calculated 13 x 2 and obtained 26. D
+We can extend the rule for multiplying by 2 to multiplying by any power of 2. For example, since
+multiplying by 4 is the same as multiplying b“y 2 and then multiplying the result by 2 again, we
+move each bit two places to the left and enter zeros in both the 21 and the 2° columns. Thus the
+rule for multiplying by 4 : (100); in binary is exactly the same as the rule for multiplying by 100
+in decimal. Similarly, the rule for multiplying by 8 = (1000); in binary is the same as the rule for
+multiplying by 1000 in decimal, and so on. 3
+Example 1.10 \Ve multiply (1011)-_» >< (101,? Note ﬁrst that (101); : (100); + (1)9. So we
+
+
+
+CHAPTER 1. NUMBERS SYSTEMS T
+perforni two multiplications and add them together.
+>- >-
+G;-1»--Q
+>-I©©>-4
+9-IQ?--*>—l
+101
+(1011); x (100);
+(1011); >< (1);
+1 bits carried forward in the sum
+1 1 0 1 1 1 (1011); >< (101);
+Thus we have (1011); >< (101); = (l.10l11);3. We leave you to check this is correct by ﬁnding the
+decimal equivalent. E!
+Binary division
+We ﬁrst note that dividing by 2 is just the reverse of the process of multiplying by 2 and so we
+have the following rule. _ '
+Rule 1.4 To divide by (10); in binary, we move each bit one place to the right and the entry in
+the units column becomes the remainder.
+Example 1.11 (110111); + (10)/1 I (11011)g, remainder (1);. E1
+The number we are dividing by is called the divisor and the number of complete times it divides
+is called the quotient. In the example above, the divisor is (10); and the quotient is (1101l.)g.
+We can easily extend Rule 1.4 to powers of 2, as illustrated in the following example.
+Example 1.12 (110111);-I~ (1000); : (1lO)g, remainder (11l)2. El
+Note that to retrieve the number we are dividing into, we reverse the process by multiplying the
+quotient by the divisor and adding the remainder. Thus the reverse of the process in Example 1.11
+is
+(110111); = (l101l)g >< (10); + (1);.
+The process of long division in the binary system is very similar to long division in the decimal
+system, but simpliﬁed by the fact that when we divide a binary number by a divisor with the some
+number of bits, the quotient is either (1); or (0)2. In the latter case, when we bring down the next
+hit, we will always obtain a quotient of (1)-1. The process is illustrated in the following example.
+Example 1.13 We calculate (101001); + (11),
+Step 1 We try dividing (11); into the ﬁrst two bits. Since (11); is greater than (10);>, the quotient
+is 09 and we bring down the next bit, so that we are now dividing (11); into (101)2. The
+quotient this time is (1);, which we record in the quotient line above the third bit. We now
+subtract (11); X (1)2 = (11); from the ﬁrst three bits to obtain the remainder (10);.
+»-->-
+O»-v->—¢
+1110 001
+Step 2 We bring down the next bit. We are now dividing a 2-bit number into a 3-bit number, so
+the quotient must be (1);. We repeat the process described in Step 1.
+>-»—1
+1-10>-0-~>~
+1-0 P—\
+1110 001
+?'T
+
+CHAPTER 1. NUMBERS SYSTEMS 8
+Step 3 We bring down the next bit. Then since (ll); is greater than (10);, we record (02) in
+the quotient row and bring down the last bit. The quotient must be (1)2 this time, so We
+record (1); above the last bit in the quotient row and subtract (ll); from (101]g to give the
+remainder.
+>—~>-\
+>-lo»->-->-4
+\-0 >-»
+O
+>—-
+1110001
+1 O 1
+1 1
+1 0 '
+Thus we have obtained (101001); + (11)-1 : (1101); with remainder (10);. Checking in decimal,
+we have divided 41 by 3 to obtain 13 with remainder 2. E3
+
